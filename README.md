@@ -13,11 +13,13 @@ This uses content-based filtering: matching a user's profile directly to item (j
 Vectorization (TF-IDF) — Every job role's skill list, plus the user's own input, gets converted into numeric vectors. Skills that appear in few job roles are weighted more heavily (they're distinctive), while skills common across almost every role are weighted down (they're less useful for telling roles apart).
 Similarity Scoring (Cosine Similarity) — Measures the angle between the user's skill vector and each job's skill vector, producing a 0–100% match score that isn't distorted by differing list lengths.
 Ranking & Filtering — Job roles are sorted by match score, and only the top 3 are returned, avoiding "choice overload."
+
 Features
 🧑‍💻 Interactive terminal input — type in your own skills, comma-separated
 📊 15 pre-loaded job roles spanning data, cloud, security, dev, and more
 🎯 TF-IDF + Cosine Similarity for genuinely meaningful matching (not just keyword counting)
 🏆 Ranked Top-3 output with match percentages
+
 Getting Started
 Prerequisites
 Python 3.9+
